@@ -6,3 +6,9 @@ services:
       target: production-stage
     ports:
       - '127.0.0.1:3001:3001'
+    networks:
+      - app-network # Connect to the shared network
+
+networks:
+  app-network:
+    external: true # Use the external network created earlier
