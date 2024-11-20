@@ -1,11 +1,11 @@
 services:
-  nuxt:
+  vitepress-docs:
     container_name: template-website-website
     build:
       context: .
       target: production-stage
     ports:
-      - '3001:3001'
+      - '127.0.0.1:3001:3001'
     networks:
       - app-network # Connect to the shared network
 
