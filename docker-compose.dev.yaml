@@ -1,0 +1,11 @@
+services:
+  nuxt:
+    container_name: template-website-website #TODO: Set your desired container name here
+    build:
+      context: .
+      target: 'develop-stage'
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./app:/app
+    command: /bin/sh -c "npm install && npm run dev"

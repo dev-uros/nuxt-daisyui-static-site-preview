@@ -1,0 +1,8 @@
+services:
+  nuxt:
+    container_name: template-website-website
+    build:
+      context: .
+      target: production-stage
+    ports:
+      - '3001:3001'
