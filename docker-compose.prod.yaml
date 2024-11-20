@@ -1,5 +1,5 @@
 services:
-  vitepress-docs:
+  nuxt-daisyui-website-preview:
     container_name: template-website-website
     build:
       context: .
